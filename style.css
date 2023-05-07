@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 @font-face {
     font-family: jameel-Noori-Nastaleeq;
@@ -20,11 +21,12 @@ body {
     width: 100%;
     height: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #b9b9b91a;
+    justify-content: space-between;
 }
 .logo_links {
+    width: 30%;
     display: flex;
     gap: 3rem;
     margin-left: 20px;
@@ -32,6 +34,11 @@ body {
 .logo img {
     width: 112px;
     /* height: 36px; */
+}
+.links_sociol_icon{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }
 .links {
     direction: rtl;
@@ -114,6 +121,12 @@ body {
     font-size: 25px;
     cursor: pointer;
 }
+.bars{
+    cursor: pointer;
+    margin-right: 20px;
+font-size: 30px;
+display: none;
+}
 .img{
     z-index: 0;
     /* margin-top: 2rem; */
@@ -154,6 +167,7 @@ body {
     background-color: #e3e8da;
     border-radius: 10px;
     padding: 30px;
+    text-align: right;
 }
 .about .about_content p,.about .about_content h1{
     font-family: jameel-Noori-Nastaleeq;
@@ -228,6 +242,7 @@ position: absolute;
 top: 15px;
 }
 input[type="button"]{
+    cursor: pointer;
     width: 163px;
 height: 60px;
 border: none;
@@ -239,4 +254,47 @@ box-shadow: 0 17px 10px rgba(0,0,0,.13);
 input{
     font-family: jameel-Noori-Nastaleeq;
     font-size: 27px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin:100px 30px 30px 30px;
+}
+.container_box img{
+    width: 270px;
+    height: 300px;
+}
+.container_box{
+    width: 270px;
+    height: 480px;
+    background-color: #e3e8da;
+}
+.content_box{
+    position: relative;
+    padding: 10px;
+}
+.content_box h3{
+    text-align: center;
+    font-family: jameel-Noori-Nastaleeq;
+    font-size: 33px;
+}
+.profile{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.profile p{
+    padding: 2px 0;
+}
+.left i{
+font-size: 40px;
+}
+.right{
+    font-size: 13px;
+}
+.Publisher{
+    font-size: 18px;
 }
